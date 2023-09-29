@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ErwiniFy</title>
-
+    <!-- link icon -->
+    <link rel="shortcut icon" type="x-icon" href="images/icon.png" />
     <!-- link to css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- font awesome link -->
-    <script src="https://kit.fontawesome.com/dbcd10496a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="background" id="background">
-        <div id="header">
-            
-            <div class="logo">ErwiniFy</div>
-            <nav>
-                <a href="#background">
-                    Home
-                </a>
-                <a href="#song-container">
-                    Music
-                </a>
-                <a href="#">
-                    About Me
-                </a>
-                <a href="#" id="sign-up">
-                    Login
-                </a>
-            </nav>
+    <script
+      src="https://kit.fontawesome.com/dbcd10496a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="background" id="background">
+      <div id="header">
+        <div class="logo">ErwiniFy</div>
+        <nav>
+          <a href="#background"> Home </a>
+          <a href="#song-container"> Music </a>
+          <a href="#"> About Me </a>
+          <a href="#" id="sign-up"> Login </a>
+        </nav>
+      </div>
+      <section id="home">
+        <div class="home-title">
+          <h1>ERWINIFY</h1>
+          <h2>NOISE PARTY</h2>
         </div>
-        <section id="home">
-            <div class="home-title">
-                <h1>ERWINIFY</h1>
-                <h2>NOISE PARTY</h2>
-            </div>
-            <div class="home-detail">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid eligendi unde porro repellat quia. Modi necessitatibus dolorum quidem, recusandae autem harum minima pariatur aperiam! Laudantium enim hic dignissimos dolore eum?</p>
-            </div>
-            <div class="home-detail">
-                <button>CHOOSE SONGS</button>
-            </div>
+        <div class="home-detail">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+            eligendi unde porro repellat quia. Modi necessitatibus dolorum
+            quidem, recusandae autem harum minima pariatur aperiam! Laudantium
+            enim hic dignissimos dolore eum?
+          </p>
+        </div>
+        <div class="home-detail">
+          <button id="choose">CHOOSE ARTIST</button>
+        </div>
+      </section>
+      <form>
+        <i class="fa-solid fa-circle-xmark"></i>
+        <h2>Login</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="checkbox" checked="checked" />
+          <label for="checkbox">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Login</button>
+        </div>
+        <div class="form-element">
+          <a
+            href="https://media.makeameme.org/created/what-the-fuck-4333815857.jpg"
+            >Forgot Password?</a
+          >
+        </div>
+      </form>
+      <div class="choose-artist">
+        <i id="artist-close" class="fa-solid fa-circle-xmark"></i>
+        <div class="artist-container">
+          <div class="artist-profile" id="bruno">
+            <img src="images/mars2.jpg" alt="" srcset="" />
+          </div>
+          <h2>Bruno Mars</h2>
+          <p>
+            Peter Gene Hernandez a American singer-songwriter and record
+            producer.
+          </p>
+        </div>
+        <div class="artist-container">
+          <div class="artist-profile" id="joji">
+            <img src="images/joji2.jpg" alt="" srcset="" />
+          </div>
+          <h2>Joji</h2>
+          <p>
+            George Miller a Japanese singer-songwriter, rapper and internet
+            personality.
+          </p>
+        </div>
+        <div class="artist-container">
+          <div class="artist-profile" id="weeknd">
+            <img src="images/weeknd2.jpg" alt="" srcset="" />
+          </div>
+          <h2>The Weeknd</h2>
+          <p>
+            Abel Makkonen Tesfaye a Canadian singer noted for his signature use
+            of the falsetto register.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="background" id="song-container"></section>
 
-        </section>
-        <form>
-            <i class="fa-solid fa-circle-xmark"></i>
-            <h2>Login</h2>
-            <div class="form-element">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter Email">
-            </div>
-            <div class="form-element">
-                <label for="password">Password</label>
-                <input type="password"  id="password" placeholder="Enter Password">
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="checkbox" checked="checked">
-                <label for="checkbox">Remember me</label>
-            </div>
-            <div class="form-element">
-                <button>Login</button>
-            </div>
-            <div class="form-element">
-                <a href="https://media.makeameme.org/created/what-the-fuck-4333815857.jpg">Forgot Password?</a>
-            </div>
-        </form>
-
-
-    
-    </div>
-    <div id="song-container">
-        <img src="https://i.gifer.com/44zG.gif" alt="" class="visual">
-        <img src="images/spotify.png" class="spotify">
-    </div>
     <!-- script ng JS -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
