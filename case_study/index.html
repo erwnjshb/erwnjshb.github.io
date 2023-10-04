@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ErwiniFy</title>
     <!-- link icon -->
-    <link rel="shortcut icon" type="x-icon" href="images/icon.png" />
+    <link rel="icon" type="x-icon" href="images/icon.png" />
     <!-- link to css -->
     <link rel="stylesheet" href="style.css" />
     <!-- font awesome link -->
@@ -17,12 +17,14 @@
   <body>
     <section class="background" id="background">
       <div id="header">
-        <div class="logo">ErwiniFy</div>
+        <a href="#">
+          <div class="logo">ErwiniFy</div>
+        </a>
         <nav>
           <a href="#background"> Home </a>
           <a href="#song-container"> Music </a>
-          <a href="#"> About Me </a>
-          <a href="#" id="sign-up"> Login </a>
+          <a href="#about-me"> About Me </a>
+          <a href="javascript:void(0)" id="sign-up"> Login </a>
         </nav>
       </div>
       <section id="home">
@@ -39,7 +41,9 @@
           </p>
         </div>
         <div class="home-detail">
-          <button id="choose">CHOOSE ARTIST</button>
+          <a href="javascript:void(0)"
+            ><button id="choose">CHOOSE ARTIST</button></a
+          >
         </div>
       </section>
       <form>
@@ -99,9 +103,174 @@
             of the falsetto register.
           </p>
         </div>
+        <div class="artist-container">
+          <div class="artist-profile" id="zwing">
+            <img src="images/zwing2.jpg" alt="" srcset="" />
+          </div>
+          <h2>ZWING</h2>
+          <p>
+            Deo Francisco Digno, also known as Zwing, is a 22-year-old Music
+            Producer & Singer/Songwriter.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="background" id="song-container"></section>
+    <section class="background" id="song-container">
+      <div id="album">
+        <div id="album-detail">
+          <div id="intro">
+            <h1>Welcome to Erwinfy</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              optio, aspernatur porro dignissimos provident quidem ab esse
+              possimus quam maxime! Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+        </div>
+        <h2>Top Albums</h2>
+        <div id="top-album">
+          <li>
+            <div class="albumImageContainer">
+              <!-- <img src="album/cover/joji/1.png" alt="" /> -->
+              <div class="empty">
+                <i class="fa-solid fa-music"></i>
+              </div>
+            </div>
+            <h3 class="AlbumTitle">Album Title</h3>
+            <p class="name-etal">Artist Name</p>
+          </li>
+          <li>
+            <div class="albumImageContainer">
+              <!-- <img src="album/cover/joji/2.png" alt="" /> -->
+              <div class="empty">
+                <i class="fa-solid fa-music"></i>
+              </div>
+            </div>
+            <h3 class="AlbumTitle">Album Title</h3>
+            <p class="name-etal">Artist Name</p>
+          </li>
+          <li>
+            <div class="albumImageContainer">
+              <!-- <img src="album/cover/joji/3.png" alt="" /> -->
+              <div class="empty">
+                <i class="fa-solid fa-music"></i>
+              </div>
+            </div>
+            <h3 class="AlbumTitle">Album Title</h3>
+            <p class="name-etal">Artist Name</p>
+          </li>
+          <li>
+            <div class="albumImageContainer">
+              <!-- <img src="album/cover/joji/4.png" alt="" /> -->
+              <div class="empty">
+                <i class="fa-solid fa-music"></i>
+              </div>
+            </div>
+            <h3 class="AlbumTitle">Album Title</h3>
+            <p class="name-etal">Artist Name</p>
+          </li>
+        </div>
+      </div>
+      <div id="playlist">
+        <h1>Playlist</h1>
+        <div id="song-list">
+          <li id="song1">
+            <div class="songs">
+              <p>01</p>
+              <div class="emptySong">
+                <i class="fa-solid fa-music"></i>
+              </div>
+              <!-- <img src="album/songs/cover/joji/1.png" alt="" srcset="" /> -->
+              <div>
+                <h4 class="song-title">Song Title</h4>
+                <p class="song-artist">Artist</p>
+              </div>
+            </div>
+          </li>
+          <li id="song2">
+            <div class="songs">
+              <p>02</p>
+              <div class="emptySong">
+                <i class="fa-solid fa-music"></i>
+              </div>
+              <!-- <img src="album/songs/cover/joji/2.png" alt="" srcset="" /> -->
+              <div>
+                <h4 class="song-title">Song Title</h4>
+                <p class="song-artist">Artist</p>
+              </div>
+            </div>
+          </li>
+          <li id="song3">
+            <div class="songs">
+              <p>03</p>
+              <div class="emptySong">
+                <i class="fa-solid fa-music"></i>
+              </div>
+              <!-- <img src="album/songs/cover/joji/3.png" alt="" srcset="" /> -->
+              <div>
+                <h4 class="song-title">Song Title</h4>
+                <p class="song-artist">Artist</p>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div id="player">
+          <div id="song-cover">
+            <div class="emptyPlayer" id="empty-player">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <!-- <img src="album/songs/cover/joji/1.png" alt="" srcset="" /> -->
+          </div>
+          <div id="control">
+            <div>
+              <h2>Song Title</h2>
+              <p>Artist</p>
+            </div>
+            <audio id="song">
+              <source src="" type="" />
+            </audio>
+            <input type="range" value="0" id="progress" />
+            <div id="control-button">
+              <i class="fa-solid fa-play" id="ctrlMusic"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="about-me">
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Communities</th>
+          <th>Useful Links</th>
+        </tr>
+        <tr>
+          <td><a href="#">About</a></td>
+          <td><a href="#">For Artists</a></td>
+          <td><a href="#">Support</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Jobs</a></td>
+          <td><a href="#">Developers</a></td>
+          <td><a href="#">Free Mobile App</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">For The Record</a></td>
+          <td><a href="#">Advertising</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Investors</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Vendors</a></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="logo">ErwiniFy</div>
+    </footer>
 
     <!-- script ng JS -->
     <script src="script.js"></script>
