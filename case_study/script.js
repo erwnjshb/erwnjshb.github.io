@@ -48,6 +48,7 @@ const songBg = document.getElementById("song-container");
 const song_title = document.getElementsByClassName("song-title");
 const song_artist = document.getElementsByClassName("song-artist");
 const song_image = document.getElementsByClassName("emptySong");
+
 //ALBUM ARRAYS
 const jojiAlbum = [
   {
@@ -332,10 +333,9 @@ home.addEventListener("click", function () {
   chang_album(emptyAlbum);
   change_song(defaultSong);
   currentSong = defaultSong;
-  detail.innerHTML = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
-  eligendi unde porro repellat quia. Modi necessitatibus dolorum
-  quidem, recusandae autem harum minima pariatur aperiam! Laudantium
-  enim hic dignissimos dolore eum?`;
+  detail.innerHTML = `Erwinify is a placee where you can play songs from the following
+            artists, Brunon Mars, The Weeeknd, Joji, Zwing. Choose an artist to
+            get started. Rorrrr!`;
 });
 
 //BRUNO MARS

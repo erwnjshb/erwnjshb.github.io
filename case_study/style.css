@@ -633,7 +633,7 @@ body {
   & table {
     font-size: 14px;
     border-spacing: 10px;
-    width: 30%;
+    width: 510px;
     & tr {
       & th {
         text-align: left;
@@ -667,5 +667,101 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@media all and (max-width: 1683px) {
+  #song-container {
+    height: 150%;
+    & #album {
+      & #album-detail {
+        text-align: center;
+        & #intro {
+          & p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .choose-artist {
+    flex-wrap: wrap;
+    width: 788px;
+    height: 930px;
+  }
+  .artist-container {
+    width: 314px;
+    max-height: 400px;
+    & h2 {
+      display: none;
+    }
+    & p {
+      display: none;
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  #background {
+    background-position: right -140px bottom -70px;
+  }
+  #top-album {
+    flex-wrap: wrap;
+    height: auto !important;
+  }
+  #intro {
+  }
+}
+@media all and (max-width: 1000px) {
+  #background {
+    background-image: none !important;
+  }
+  #home {
+    width: 90% !important;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    & h1 {
+      font-size: 8rem !important;
+    }
+    & p {
+      margin-bottom: 3rem;
+    }
+  }
+}
+@media all and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+
+  #about-me {
+    justify-content: center;
+    & .logo {
+      display: none !important;
+    }
+  }
+}
+
+@media all and (max-width: 725px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 590px) {
+  html {
+    font-size: 8px;
+  }
+
+  #header {
+    justify-content: center !important;
+  }
+  nav {
+    display: none !important;
+  }
+}
+@media all and (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  p {
   }
 }
